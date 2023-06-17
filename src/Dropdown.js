@@ -16,7 +16,7 @@ const Dropdown = ({ items }) => {
   return (
     <div className={`dropdown ${isOpen ? 'open' : ''}`}>
       <button className="dropdown__button" onMouseEnter={toggleDropdown}>
-        {selectedItem ? selectedItem : 'Select an item'}
+        {selectedItem ? selectedItem : 'Select'}
       </button>
       {isOpen && (
         <ul className="dropdown__list">

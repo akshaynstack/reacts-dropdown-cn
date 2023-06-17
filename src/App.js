@@ -1,14 +1,20 @@
 import React from 'react';
 import Dropdown from './Dropdown';
+import { useEffect } from 'react';
 
 const App = () => {
-  const items = ['Option 1', 'Option 2', 'Option 3'];
+  useEffect(() => {
+    document.title = 'Dropdown'; // Set your desired title here
+  }, []);
+
+  const items = ['Yes', 'Probably not'];
 
   return (
     <div className="App card">
-      <h1>Should you use a dropdown?</h1>
+      <h1 className='card__title'>Should you use a dropdown?</h1>
       <Dropdown items={items} />
     </div>
+    
   );
 };
 
